@@ -6,6 +6,12 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="style/styles.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/2a31f8fa74.js" crossorigin="anonymous"></script>
         <title>COGS 3 Final Portfolio</title>
@@ -13,7 +19,7 @@
     
     <body>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">W</a>
+          <p class="navbar-brand w">W</p>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -30,41 +36,58 @@
 
         <main>
           <section class="hero" id="home">
-            <div class="row justify-content-md-center">
+            <div class="row hi-there">
               <h1>Hi There!</h1>
-              <i class="fa-solid fa-hand-sparkles fa-2x"></i>
+              <i class="fa-solid fa-hand fa-5x wave"></i>
             </div>
-            <p>My name is Wilson Nguyen
+            <p class="row justify-content-md-center">My name is Wilson Nguyen
                 and I am an aspiring UI/UX Designer 
-                based in San Diego, California.
+                based in San Diego, California.</p>
           </section>
-          
-          <!-- <section class="about-me" id="about">
+
+          <section class="about-me" id="about">
             <h2>About Me</h2>
-            <div class="row justify-content-md-center">
-              <div class="col-lg-4">
-                  <img src="images/profile.png" alt="profilepic">
+            <div class="row profile-container">
+              <div class="col-lg-6 pfp">
+                <img src="images/profile.png" alt="profilepic">
               </div>
-              <div class="col-lg-4"
-                  <p id="abouttext">I am currently a fourth year college student attending UCSD, majoring in 
-                      Cognitive Science: Design & Interaction, with a minor in Computer Science. I am hoping
-                      to break into tech as a UI/UX Designer. 
-                  </p>
+              <div class="col-lg-6 about-text">
+                <p>I am currently a fourth year college student attending UCSD, majoring in 
+                    Cognitive Science: Design & Interaction, with a minor in Computer Science. I am hoping
+                    to break into tech as a UI/UX Designer.
+                </p>
               </div>
             </div>
           </section> 
 
           <section class="my-projects" id="projects">
             <h2>Projects</h2>
-            <div class="first-project">
+            <div class="row justify-content-md-center project-1">
+              <div class="col-lg-6 p1">
+                <iframe src="https://cse110-sp23-group6.github.io/SixthSense/" title="Sixth Sense"></iframe>
+              </div>
+              <div class="col-lg-6 project1-text">
+                <p>This is a fortune telling website that I worked with 8 other people on.
+                  It was my first Software Engineering project. It asks users to answer a few mood-based questions
+                  and gives them an emotion that they are feeling.</p>
+              </div>
+            </div>
+
+            <div class="row justify-content-md-center p2">
+              <div class="col-lg-6 p2"
+            </div>
+          </section>
+
+          <!-- <section class="my-projects" id="projects">
+                   <div class="first-project">
               <iframe src="https://cse110-sp23-group6.github.io/SixthSense/" title="Sixth Sense"></iframe>
               <p id="6thdescription">This is a fortune telling website that I worked with 8 other people on.
                   It was my first Software Engineering project. 
               </p>
             </div>
-          </section>
+          </section> -->
 
-          <section class="contact-me" id="contact">
+          <!-- <section class="contact-me" id="contact">
             <h2>Contact Me!</h2>
             <form action="submissions.php" method="post">
               <input type="text" class="contact-form-input" placeholder="Your name">
@@ -73,7 +96,7 @@
               <textarea class="contact-form-input" placeholder="Your message"></textarea>
               <button type="submit">Send</button>
             </form>
-          </section> 
-        </main>
-    </body> -->
+          </section> -->
+        </main> 
+    </body> 
 </html> 

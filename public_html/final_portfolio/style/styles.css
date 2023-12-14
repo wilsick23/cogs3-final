@@ -78,7 +78,7 @@ h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
     color: white;
-    margin-top: 50px 50px
+    margin-top: 50px;
 }
 
 h2 {
@@ -131,11 +131,15 @@ h2 {
 .project-1 {
     margin: 0;
     align-items: center;
+    padding-bottom: 30px;
+    justify-content: center;
 }
 
 .p1 {
-    text-align: center;
+    text-align: end;
     padding: 0;
+    padding-right: 50px;
+    padding-top: 20px;
 }
 
 .p1 iframe {
@@ -149,9 +153,42 @@ h2 {
 
 .project1-text {
     padding: 0;
+    padding-left: 50px;
 }
 
 .project1-text p {
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 1.3rem;
+    width: 550px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+hr {
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    opacity: 50%;
+}
+
+.p2 {
+    margin: 0;
+    align-items: center;
+    padding-top: 30px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.project2-text {
+    padding: 0;
+    padding-right: 50px;
+    text-align: end;
+
+}
+
+.project2-text p, .project2-text-hidden p {
     color: white;
     font-family: 'Quicksand';
     font-size: 1.3rem;
@@ -161,6 +198,28 @@ h2 {
     margin-bottom: 0;
 }
 
+.project2-text p{
+    float: right;
+    width: 550px;
+}
+
+.project2-link {
+    padding: 0;
+    padding-left: 50px;
+}
+
+.project2-link iframe {
+    margin-top: 20px;
+    width: 560px;
+    height: 315px;
+    border: none;
+    box-shadow: #393455 0px 0px 60px 5px;
+    border-radius: 5%;
+}
+
+.project2-text-hidden p {
+    display: none;
+}
 
 /* Contact Form */
 .contact-me {
@@ -180,8 +239,8 @@ form {
     box-sizing:border-box;
     margin: 16px 0;
     border: 0;
-    background-color: #289756;
-    opacity: 35%;
+    background-color:#b9b3df;
+    opacity: 70%;
     padding: 20px 40px;
     outline: none;
     transition: 0.3s;
@@ -204,7 +263,7 @@ button {
     color: white;
     float: left;
     border: 0;
-    background: #289756;
+    background:#241b4d;
     padding: 12px 50px;
     transition: 0.5s;
 }
@@ -241,6 +300,8 @@ button {
     }
     .p1 {
         max-width: 100%;
+        flex: 0 0 50%;
+        padding-right: 0;
     }
     .p1 iframe {
         margin: auto;
@@ -250,11 +311,36 @@ button {
     }
     .project1-text {
         max-width: 100%;
-        padding: 0 0 50px;
+        padding: 0 0 20px;
+        flex: 0 0 50%;
     }
-    .project1-text p{
+    .project1-text p, .project2-text-hidden p  {
         text-align: center;
+        width: 75vw;
+    }
+    .project2-link {
+        max-width: 100%;
+        padding-top: 20px;
+        flex: 0 0 50%;
+        padding-left: 0;
+    } 
+    .project2-link iframe {
+        margin: auto;
+        margin-bottom: 40px;
         width: 672px;
+        height: 378px;
+    }
+    .project2-text {
+        display: none;
+    }
+    .project2-text-hidden {
+        max-width: 100%;
+        padding: 0 0 50px;
+        flex: 0 0 50%;
+    }
+    .project2-text-hidden p {
+        display: block;
+        color: white;
     }
 }
 
@@ -267,6 +353,24 @@ button {
     }
     .hero p {
         margin-top: 50px;
+    }
+    .p1 {
+        text-align: center;
+    }
+    .p1 iframe {
+        margin: auto;
+        margin-bottom: 40px;
+        width: 448px;
+        height: 252px;
+    }
+    .project1-text p, .project2-text-hidden p{
+        font-size: 1rem;
+    }
+    .project2-link iframe {
+        margin: auto;
+        margin-bottom: 40px;
+        width: 448px;
+        height: 252px;
     }
 }
 
@@ -287,5 +391,9 @@ button {
     .about-text p {
         font-size: 1.1rem;
         line-height: 30px;
+    }
+    .p1 iframe,.project2-link iframe  {
+        width: 336px;
+        height: 189px;
     }
 }

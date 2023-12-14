@@ -1,0 +1,51 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+.contact-me {
+    padding: 40px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding:0 10px;
+    overflow: hidden;
+}
+
+.contact-form-input {
+    display: block;
+    width: 100%;
+    box-sizing:border-box;
+    margin: 16px 0;
+    border: 0;
+    background-color: #289756;
+    opacity: 35%;
+    padding: 20px 40px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form-input:focus {
+    box-shadow: 0 0 10px 4px #1c2935;
+}
+
+::placeholder {
+    color: black;
+}
+
+textarea.contact-form-input {
+    resize: none;
+    height: 160px;
+}
+
+button {
+    color: white;
+    float: left;
+    border: 0;
+    background: #289756;
+    padding: 12px 50px;
+    transition: 0.5s;
+}
